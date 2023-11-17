@@ -7,3 +7,44 @@
     background-color: #0009;
     background-blend-mode: soft-light;
 }
+
+.banner {
+    height: calc(100vh - 84px);
+    padding-top: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.banner__title {
+    color: #FFF;
+    font-size: 80px;
+    text-shadow: -2px 4px 4px rgba(151,252,0,0.6);
+}
+
+.banner__subtitle {
+    font-size: 28px;
+    color: #FFF;
+    display: block;
+    white-space: nowrap;
+    border-right: 3px solid #97fc00;
+    width: 45ch;
+    animation: typing 5s steps(49, end), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    text-shadow: -2px 4px 4px rgba(151,252,0,0.6);
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    50% {
+        border-color: transparent;
+    }
+}
