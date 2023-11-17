@@ -9,7 +9,7 @@
 }
 
 .banner {
-    height: calc(100vh - 84px);
+    height: 100vh;
     padding-top: 84px;
     display: flex;
     justify-content: center;
