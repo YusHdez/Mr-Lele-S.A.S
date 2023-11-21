@@ -10,17 +10,35 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header"> 
         <div class="header__brand">
             <img src="./assets/img/favicon.png" alt="Logo de la empresa">
             <h1>Mr Lele S.A.S</h1>
-        </div>
+        </div> 
 
-        <nav>
+        <i class="header__icon" id="menu-open">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" /> 
+              </svg>
+              
+        </i> 
+
+        <nav class="header__nav" id="nav-menu">
+            <i class="header__icon header__icon--close" id="menu-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                  </svg>
+            </i>
+           
             <ul class="header__menu">
                 <li><a class="header__link" href="./index.html">Inicio</a></li>
                 <li><a class="header__link" href="">Acerca de</a></li>
-                <li><a class="header__link header__link--button" href="./assets/views/login.html">Iniciar Sesion</a>
+                <li><a class="header__link header__link--button" href="./assets/views/login.html">Iniciar Sesión</a>
                 </li>
             </ul>
         </nav>
@@ -36,7 +54,7 @@
             <div class="informacion-empresa__container">
                 <div class="informacion-empresa__card">
                     <span class="informacion-empresa__quienesomos">
-                        <img src="./assets/img/brand-cakephp.svg" alt="Quienes somos img">
+                        <img src="./assets/img/favorite.svg" alt="favorite icon">
                     </span>
                     <img class="informacion-empresa__card-img" src="./assets/img/users-group.svg" alt="cake">
  
@@ -48,10 +66,58 @@
                         productos de repostería saludable
                         ideales para todas esas personas
                         que quieran tener una salud
-                        equilibrada.
+                        equilibrada. Nuestra gama de productos 
+                        no solo se enfoca en satisfacer los paladares 
+                        más exigentes, sino también en contribuir a 
+                        la salud general de nuestros clientes. 
                     </p>
                 </div>
             </div>
+ 
+                <div class="informacion-empresa__card">
+                    <span class="informacion-empresa__quienesomos">
+                        <img src="./assets/img/favorite.svg" alt="favorite icon">
+                    </span>
+                    <img class="informacion-empresa__card-img" src="./assets/img/vision.svg" alt="Vision icon">
+ 
+                <div class="informacion-empresa__card-content">
+                    <h3>Vision</h3>
+                    <p>
+                        A nivel departamental proyectar a Ser en
+                        el 2025 la empresa que represente
+                        cambios en el ámbito de la
+                        comercialización de repostería saludable
+                        y lograr posicionarnos como una
+                        empresa prestigiosa y reconocida por
+                        incentivar a nuestros clientes a crear
+                        hábitos para una alimentación saludable,
+                        brindando productos de calidad, bajos en
+                        azúcar y grasa.
+                    </p>
+                </div>
+            </div>
+
+             
+                <div class="informacion-empresa__card">
+                    <span class="informacion-empresa__quienesomos">
+                        <img src="./assets/img/favorite.svg" alt="favorite icon">
+                    </span>
+                    <img class="informacion-empresa__card-img" src="./assets/img/mision.svg" alt="Mision icon">
+ 
+                <div class="informacion-empresa__card-content">
+                    <h3>Mision</h3>
+                    <p>
+                        Comercializar productos de repostería
+                        saludable de altos estándares, que mejoren
+                        la calidad de vida del consumidor que los
+                        disfruta, con mejoras nutricionales como fibra y 
+                        menos grasas saturadas. Basan su compromiso y honestidad 
+                        en cada trabajador, buscando la felicidad del cliente a 
+                        través de servicios y productos excelentes.
+                    </p>
+                </div>
+            </div>
+
 
         </section>
     </main>
