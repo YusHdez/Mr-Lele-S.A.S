@@ -2,12 +2,12 @@
     background-color: #FFF;
 }
 
-.informacion-empresa__title {
-    color: black;
+.informacion-empresa__title { 
     font-size: 40px;
-    text-shadow: -2px 4px 4px rgba(151,252,0,0.6);
+    /*text-shadow: -2px 4px 4px rgba(151,252,0,0.6); */ 
     text-align: center;
     padding-top: 50px;
+    margin-bottom: 20px;
 }
 
 .informacion-empresa__container {

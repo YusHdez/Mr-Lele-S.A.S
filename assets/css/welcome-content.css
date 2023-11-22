@@ -37,6 +37,10 @@
     text-shadow: -2px 4px 4px rgba(151,252,0,0.6);
 } 
 
+#inicio {
+    transition: 0.5s;
+}
+
 @media screen and (width <= 720px) {
     .banner__title {
         font-size: 40px;

@@ -2,6 +2,7 @@
 @import './header.css';
 @import './welcome-content.css';
 @import './acercade.css';
+@import './reseñas.css';
 
 * {
     margin: 0;
