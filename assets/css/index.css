@@ -3,6 +3,7 @@
 @import './welcome-content.css';
 @import './acercade.css';
 @import './reseñas.css';
+@import './footer.css';
 
 * {
     margin: 0;
