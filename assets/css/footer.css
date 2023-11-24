@@ -54,5 +54,21 @@
 .footer__direct-access {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+}
+
+@media screen and (width <=720px) {
+    .footer {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .footer__direct-access {
+        flex-direction: column;
+    }
+
+    .copyright {
+        flex-direction: column;
+        display: block;
+    }
 }

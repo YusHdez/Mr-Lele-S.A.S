@@ -66,6 +66,7 @@
 }
 
 .header__icon { 
+    cursor: pointer;
     color: #FFF;
     display: none;
 } 
