@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
  
 
 *{
@@ -39,9 +40,10 @@ body{
     position: relative;
     top: 40px;
     overflow: hidden;
-    width: 650px;
+    width: 700px;
     max-width: 100%;
     min-height: 500px;
+    padding: 20px;
 }
 
 .container p{
@@ -242,8 +244,9 @@ label#genero{
 @media (max-width: 640px){
     .container{
         max-width: 90%;
-        min-height: 720px;
+        min-height: 490px;
         transition: all 1s ease-out;
+        padding: 10px;
     }
 
     div.genero{

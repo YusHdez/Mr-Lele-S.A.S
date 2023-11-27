@@ -47,7 +47,7 @@
     }
     .banner__subtitle {
         font-size: 20px;
-        animation: typing 5s steps(30, end), blink .5s infinite step-end alternate;
+        animation: typing 5s steps(35, end), blink .5s infinite step-end alternate;
 
     }
 }

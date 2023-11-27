@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 @import './header.css';
 @import './headerlogin.css';
-@import './login.css';
-@import './footer.css';
+@import './login.css'; 
 
 body {
     min-height: 100vh;

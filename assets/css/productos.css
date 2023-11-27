@@ -1,23 +1,21 @@
 .productos {
     background-color: #FFF; 
+    padding: 10px;
 }
 
 .productos__title { 
-    font-size: 40px;
-    /*text-shadow: -2px 4px 4px rgba(151,252,0,0.6); */ 
+    font-size: 40px; 
     text-align: center;
     padding-top: 50px;
     margin-bottom: 20px; 
 }
 
-.productos__container {
-    
+.productos__container { 
     max-width: 1110px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    
+    gap: 20px; 
 }
 
 .productos__card {
@@ -28,7 +26,8 @@
     padding: 25px 45px;
     transition: 0.3s;
     text-align: center;
-    height: 560px; 
+    height: 510px; 
+    gap: 10px;
 }
 
 .productos__card-img {
@@ -61,7 +60,8 @@
 
 @media screen and (width <= 720px) {
     .productos__container {
-        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+            flex-direction: column;
         margin: 10px;
     }
     
@@ -72,6 +72,13 @@
 
     .productos__card {
         height: 580px;
+
     }
+
+    .productos__card-img-bebidas__paletas {
+        width: 300px !important;
+        height: 150px !important;
+    }
+
 } 
  
