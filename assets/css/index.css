@@ -4,6 +4,7 @@
 @import './acercade.css';
 @import './reseñas.css';
 @import './footer.css';
+@import './productos.css';
 
 * {
     margin: 0;

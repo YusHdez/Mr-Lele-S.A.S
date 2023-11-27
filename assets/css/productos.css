@@ -1,0 +1,59 @@
+.productos {
+    background-color: #FFF; 
+}
+
+.productos__title { 
+    font-size: 40px;
+    /*text-shadow: -2px 4px 4px rgba(151,252,0,0.6); */ 
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 20px; 
+}
+
+.productos__container {
+    
+    max-width: 1110px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.productos__card {
+    box-shadow: 0px -2px 20px 1px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    position: relative;
+    border-radius: 10px;
+    padding: 25px 45px;
+    transition: 0.3s;
+    text-align: center; 
+}
+
+.productos__card-img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.productos__card-img-bebidas__paletas {
+    width: 100% !important;
+    height: 50% !important;
+}
+
+.vermas {
+    padding: 10px 15px;
+    border: 1px solid #97fc00 ;
+    background-color: #FFF;
+    border-radius: 8rem;
+    transition: 0.3s; 
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.vermas:hover {
+    background-color: #97fc00; 
+    color: #FFF;
+    font-weight: 600;
+}
+ 

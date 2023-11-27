@@ -35,14 +35,13 @@
     height: 100%; 
     border-radius: 15px 15px 15px 15px;
 }
- 
+
 .reseñas__ftperfil { 
     position: relative;
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
- 
 
 .reseñas__container {
     max-width: 1110px;
@@ -57,9 +56,8 @@
     flex-direction: column;
     gap: 15px;
     padding: 40px; 
-     
 }
- 
+
 
 .reseñas__info {
     color: #666666;
@@ -78,7 +76,7 @@
     display: flex;
     gap: 15px;
 }
- 
+
 .reseñas__icon {
     color: rgb(255, 208, 0);
 }

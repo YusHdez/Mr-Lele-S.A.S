@@ -32,7 +32,7 @@
     white-space: nowrap;
     border-right: 3px solid #97fc00;
     width: 45ch;
-    animation: typing 5s steps(40, end), blink .5s infinite step-end alternate;
+    animation: typing 6s steps(41, end ), blink .4s infinite step-end alternate;
     overflow: hidden;
     text-shadow: -2px 4px 4px rgba(151,252,0,0.6);
 } 
@@ -44,28 +44,30 @@
 @media screen and (width <= 720px) {
     .banner__title {
         font-size: 40px;
-         
     }
     .banner__subtitle {
         font-size: 20px;
+        animation: typing 5s steps(30, end), blink .5s infinite step-end alternate;
+
     }
 }
 
 @media screen and (width <= 500px) {
     .banner__title {
         font-size: 30px;
-         
     }
     .banner__subtitle {
         font-size: 15px;
+        animation: typing 5s steps(20, end), blink .5s infinite step-end alternate;
+
     }
 }
 
 @media screen and (width <= 350px) {
     .banner__title {
         font-size: 25px;
-         
     }
+
     .banner__subtitle {
         font-size: 12.5px;
     }
