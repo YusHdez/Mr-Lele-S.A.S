@@ -17,27 +17,29 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    
 }
 
 .productos__card {
     box-shadow: 0px -2px 20px 1px rgba(0,0,0,0.25);
-    border-radius: 20px;
+    border-radius: 20px; 
     position: relative;
     border-radius: 10px;
     padding: 25px 45px;
     transition: 0.3s;
-    text-align: center; 
+    text-align: center;
+    height: 560px; 
 }
 
 .productos__card-img {
-    width: 50%;
-    height: 50%;
+    width: 200px;
+    height: 200px;
     margin-bottom: 20px;
 }
 
 .productos__card-img-bebidas__paletas {
-    width: 100% !important;
-    height: 50% !important;
+    width: 400px !important;
+    height: 200px !important;
 }
 
 .vermas {
@@ -56,4 +58,20 @@
     color: #FFF;
     font-weight: 600;
 }
+
+@media screen and (width <= 720px) {
+    .productos__container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
+    }
+    
+    .productos {
+    margin: 0 auto;
+    padding-inline: 20px;
+    }
+
+    .productos__card {
+        height: 580px;
+    }
+} 
  
