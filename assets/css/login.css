@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
  
 
 *{
@@ -44,6 +44,7 @@ body{
     max-width: 100%;
     min-height: 500px;
     padding: 20px;
+    transition: all 1s;
 }
 
 .container p{
@@ -135,21 +136,11 @@ body{
     animation: move 0.6s;
 }
 
-div.genero{
-    display: flex;
-    flex-direction: row;
-    position: relative; 
-    justify-content: space-between; 
-    gap: 20px;
-}
-
-p.genero{
-    font-size: 15px;
-}
-
-label#genero{
+select{
     font-size: 17px;
-    position: relative; margin-top: 7px; margin-right: 215px;
+    position: relative; margin-top: 7px;
+    border-radius: 20px;
+    width: 200px;
 }
 
 
@@ -175,7 +166,6 @@ label#genero{
     overflow: hidden;
     transition: all 0.6s ease-in-out;
     border-radius: 150px 0 0 100px;
-    z-index: 1000;
 }
 
 .container.active .cambio-container{
@@ -239,28 +229,27 @@ label#genero{
         min-height: 700px;
         transition: all 1s ease-out;
     }
+
+    select{
+     position: relative; margin-top: 7px;
+     width: 190px;
+     transition: all 1s;
+    }
+ 
 }
 
 @media (max-width: 640px){
     .container{
         max-width: 90%;
-        min-height: 490px;
+        min-height: 750px;
         transition: all 1s ease-out;
         padding: 10px;
     }
 
-    div.genero{
-        display: flex;
-        position: relative; 
-        gap: 0%;
-        flex-direction: column;
+    select{
+     position: relative; margin-top: 7px;
+     width: 120px;
+     transition: all 1s;
     }
-
-    #genero{
-        position: relative; margin-left: 160px;
-    }
-
-    p.genero{
-        font-size: 15px;
-    }
+ 
 }
