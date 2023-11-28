@@ -2,12 +2,12 @@
     background-color: #FFF;
 }
 
-.informacion-empresa__title {
-    color: black;
+.informacion-empresa__title { 
     font-size: 40px;
-    text-shadow: -2px 4px 4px rgba(151,252,0,0.6);
+    /*text-shadow: -2px 4px 4px rgba(151,252,0,0.6); */ 
     text-align: center;
     padding-top: 50px;
+    margin-bottom: 20px;
 }
 
 .informacion-empresa__container {
@@ -22,7 +22,7 @@
 .informacion-empresa__card {
     position: relative;
     border-radius: 10px;
-    padding: 35px 55px;
+    padding: 25px 45px;
     transition: 0.3s;
     text-align: center;
 }
@@ -61,3 +61,16 @@
 .informacion-empresa__card-content p {
     font-size: 16px;
 }
+
+@media screen and (width <= 720px) {
+    .informacion-empresa__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .informacion-empresa {
+    margin: 0 auto;
+    padding-inline: 10px;
+    }
+} 
+
+  

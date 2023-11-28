@@ -7,14 +7,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.3s;
-    z-index: 10; /*Colocar header encima de la pag dependiendo de la capa*/
-}
-
-.header--fill {
     background-color: #97fc00;
     box-shadow: 0px 3px 34px -8px rgba(145, 241, 0, 1);
 }
+
+
 
 .header__brand {
     display: flex;
@@ -47,7 +44,7 @@
     font-weight: 700;
     font-size: 15px;
     transition: 0.3s;
-    text-shadow: -2px 4px 4px rgba(151, 252, 0, 0.6);
+    text-shadow: -2px 4px 4px rgba(151,252,0,0.6);
 }
 
 .header__link:hover {
@@ -65,33 +62,12 @@
     background-color: #ffffff8a;
 }
 
-.header__icon { 
-    cursor: pointer;
-    color: #FFF;
-    display: none;
-} 
-
-.header__icon--close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-#Acercadelaempresa {
-    transition: 0.5s;
-}
-
-/* Ocultar y mostrar el menu */
-.header__nav--visible {
-    right: 0 !important; 
-}
-
-@media screen and (width <=720px) {
-    .header {
+@media (max-width: 768px) {
+    .header{
         padding: 15px 25px;
     }
-
-    .header__nav {
+    
+    nav {
         position: absolute;
         top: 0;
         right: -100%;
@@ -100,9 +76,9 @@
         background-color: #97fc00;
         box-shadow: 0px 3px 34px -8px rgba(145, 241, 0, 1);
         width: 80%;
-        transition: right 0.3s; /*para cuando se abra y se cierre el menu*/
+        transition: right 0.3s;
     }
-
+    
     .header__menu {
         flex-direction: column;
         justify-content: flex-start;
@@ -111,8 +87,8 @@
 
     .header__brand h1 {
         font-size: 20px;
-    }
-
+    } 
+    
     .header__brand img {
         width: 1.75rem;
         height: 1.75rem;
@@ -121,8 +97,10 @@
     .header__link {
         font-size: 20px;
     }
-
-    .header__icon {  
+ 
+    .header__icon {
         display: block;
     }
+
 }
+
