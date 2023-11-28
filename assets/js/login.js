@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
       if (emailValue === emailRegistrado && contrasenaValue === contrasenaRegistrada) {
         alert('Inicio de sesión exitoso');
-        window.location.href ='http://127.0.0.1:5500/usuario.html';
+        window.location.href ='http://127.0.0.1:5500/assets/views/usuario.html';
       } else {
         alert('Credenciales incorrectas');
       }
