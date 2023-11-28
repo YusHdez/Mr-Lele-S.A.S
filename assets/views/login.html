@@ -57,20 +57,20 @@
                 <input id="register-email" type="email" placeholder="Email"required>
                 <input id="register-password" type="password" placeholder="Contraseña" required>
                 <h4 for="regiter-form"> Género: </h4>
-                <div class="genero"> 
-                    <p class="genero">Hombre</p><input type="radio" name="Genero" value="Hombre" > 
-                    <p class="genero">Mujer</p> <input type="radio" name="Genero" value="Mujer" > 
-                    <p class="genero">Otro</p> <input type="radio" name="Genero" value="Otro" >
-                </div>  
+                <select id="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
                    
                 <button type="submit">siguiente</button>
             </form>
         </div>
         <div class="form-container sign-in">
-            <form>
+            <form id="loginForm">
                 <h1>Inicia sesión</h1>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Contraseña" required>
+                <input type="email" placeholder="Email" id="email" required>
+                <input type="password" placeholder="Contraseña" id="contrasena" required>
                 <button type="submit">siguiente</button>
             </form>
         </div>
