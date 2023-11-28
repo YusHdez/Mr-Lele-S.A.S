@@ -7,10 +7,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.3s;
+    z-index: 10; /*Colocar header encima de la pag dependiendo de la capa*/ 
     background-color: #97fc00;
     box-shadow: 0px 3px 34px -8px rgba(145, 241, 0, 1);
 }
-
 
 
 .header__brand {
@@ -44,7 +45,7 @@
     font-weight: 700;
     font-size: 15px;
     transition: 0.3s;
-    text-shadow: -2px 4px 4px rgba(151,252,0,0.6);
+    text-shadow: -2px 4px 4px rgba(151, 252, 0, 0.6);
 }
 
 .header__link:hover {
@@ -56,18 +57,40 @@
     border: 1px solid #FFF;
     border-radius: 8rem;
     transition: 0.3s;
+    margin-right: 20px;
 }
 
 .header__link--button:hover {
     background-color: #ffffff8a;
 }
 
-@media (max-width: 768px) {
-    .header{
+.header__icon { 
+    cursor: pointer;
+    color: #FFF;
+    display: none;
+} 
+
+.header__icon--close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#Acercadelaempresa {
+    transition: 0.5s;
+}
+
+/* Ocultar y mostrar el menu */
+.header__nav--visible {
+    right: 0 !important; 
+}
+
+@media screen and (width <=720px) {
+    .header {
         padding: 15px 25px;
     }
-    
-    nav {
+
+    .header__nav {
         position: absolute;
         top: 0;
         right: -100%;
@@ -76,9 +99,9 @@
         background-color: #97fc00;
         box-shadow: 0px 3px 34px -8px rgba(145, 241, 0, 1);
         width: 80%;
-        transition: right 0.3s;
+        transition: right 0.3s; /*para cuando se abra y se cierre el menu*/
     }
-    
+
     .header__menu {
         flex-direction: column;
         justify-content: flex-start;
@@ -87,8 +110,8 @@
 
     .header__brand h1 {
         font-size: 20px;
-    } 
-    
+    }
+
     .header__brand img {
         width: 1.75rem;
         height: 1.75rem;
@@ -97,10 +120,9 @@
     .header__link {
         font-size: 20px;
     }
- 
-    .header__icon {
+
+    .header__icon {  
         display: block;
+        margin-right: 40px;
     }
-
 }
-

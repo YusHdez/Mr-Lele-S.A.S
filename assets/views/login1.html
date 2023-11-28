@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="./../css/login1.css/index-login.css">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="header__brand">
+            <img src="./../img/favicon.png" alt="Logo de la empresa">
+            <h1>Mr. Lele S.A.S</h1>
+        </div>
+
+        <i class="header__icon" id="menu-open">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="30" height="30"
+                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+            </svg>
+        </i>
+
+        <nav class="header__nav" id="nav-menu">
+            <i class="header__icon header__icon--close" id="menu-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="30" height="30"
+                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                </svg>
+            </i>
+
+            <ul class="header__menu">
+                <li><a class="header__link" href="http://127.0.0.1:5500/">Inicio</a></li>
+                <li><a class="header__link" href="http://127.0.0.1:5500/">Acerca de</a></li>
+                <li><a class="header__link" href="http://127.0.0.1:5500/">Reseñas</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="container">
+        <form id="loginForm" class="loginForm__container">
+            <div class="login__container">
+                <h1>Iniciar Sesión</h1>
+                Email:<input class="email" type="email" placeholder="Email" id="email" required>
+                Contraseña:<input class="contraseña" type="password" placeholder="Contraseña" id="contrasena" required>
+                <button class="button" type="submit">Inicia Sesión</button>
+                <p class="message">¿Primera vez? <a href="./register.html">Crea una cuenta</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="./../js/index.js"></script>
+    <script src="./../js/login.js"></script>
+</body>
+
+</html>

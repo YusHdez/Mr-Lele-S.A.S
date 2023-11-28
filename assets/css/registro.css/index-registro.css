@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import './header.css';
+@import './header-registro.css';
+@import './register.css'; 
+
+body {
+    min-height: 100vh;
+    background-image: url(../../img/banners/bannerinicio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #0009;
+    background-blend-mode: soft-light;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+} 
+
+.container{
+    display: flex;
+}
